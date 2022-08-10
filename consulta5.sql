@@ -1,0 +1,12 @@
+select 'Consulta 1';
+select * from fabricantes order by fabricante asc;
+select 'Consulta 2';
+select * from bicicletas where año >= 2019 order by fabricante asc;
+select 'Consulta 3';
+select fabricante from motocicletas_electricas where proveedor_del_motor='Auteco';
+select 'Consulta 4';
+select fabricante from intencion_compra where alias='lucky' order by fabricante asc;
+select 'Consulta 5';
+select c.alias, c.nombre, c.apellidos from clientes c, intencion_compra i where i.alias=c.alias and i.fabricante='Yeti' order by nombre asc;
+select 'Consulta 6';
+select count(fabricante) from bicicletas where año>= 2019;
